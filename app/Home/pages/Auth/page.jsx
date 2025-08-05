@@ -13,12 +13,6 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
-};
-
 const slideIn = {
   initial: { opacity: 0, x: 60 },
   animate: { opacity: 1, x: 0 },
