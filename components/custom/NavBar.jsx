@@ -14,14 +14,14 @@ export default function NavBar() {
 
   // ✅ Hide nav items on these specific routes
   const hideNavItems = [
-    "/AboutUs",
-    "/PrivicyPolicy",
-    "/TermsOfService",
-    "/ContactUs",
-    "/Blog",
-    "/Terms",
-    "/Auth",
-    "/404",
+    "/Home/pages/AboutUs",
+    "/Home/pages/PrivicyPolicy",
+    "/Home/pages/TermsOfService",
+    "/Home/pages/ContactUs",
+    "/Home/pages/Blog",
+    "/Home/pages/Terms",
+    "/Home/pages/Auth",
+    "/Home/pages/404",
   ].includes(pathname);
 
   return (

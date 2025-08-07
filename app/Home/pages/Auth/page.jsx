@@ -12,6 +12,7 @@ import {
   Chrome,
 } from "lucide-react";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 const slideIn = {
   initial: { opacity: 0, x: 60 },
@@ -41,7 +42,8 @@ export default function AuthPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission here
-    console.log("Form submitted:", formData);
+    localStorage.setItem("Authenticated", "true");
+    redirect("/");
   };
 
   const toggleAuthMode = () => {

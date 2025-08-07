@@ -21,13 +21,13 @@ import {
   Github,
   Mail,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-
+import { useRouter } from 'next/navigation';
 
 const staggerContainer = {
   animate: {
@@ -43,6 +43,24 @@ const staggerItem = {
 };
 
 export default function LandingPage() {
+
+  const AuthRedirect = () => {
+    const router = useRouter();
+
+    useEffect(() => {
+      const isAuthenticated = localStorage.getItem('Authenticated');
+
+      if (isAuthenticated === 'true') {
+        router.replace('/Dashboard'); // or router.push()
+      }
+    }, [router]);
+
+    return null; // or a loader/spinner
+  };
+
+  AuthRedirect()
+
+
   const [openFaq, setOpenFaq] = useState(null);
 
   const companies = [
@@ -657,11 +675,10 @@ export default function LandingPage() {
             {plans.map((plan, index) => (
               <motion.div key={index} variants={itemVariants}>
                 <Card
-                  className={`h-full relative group transition-all duration-500 hover:-translate-y-2 ${
-                    plan.popular
-                      ? "border-2 border-blue-600 shadow-xl scale-105"
-                      : "border-blue-100 hover:border-blue-600/30 hover:shadow-xl"
-                  }`}
+                  className={`h-full relative group transition-all duration-500 hover:-translate-y-2 ${plan.popular
+                    ? "border-2 border-blue-600 shadow-xl scale-105"
+                    : "border-blue-100 hover:border-blue-600/30 hover:shadow-xl"
+                    }`}
                 >
                   {plan.popular && (
                     <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white font-dm">
@@ -684,11 +701,10 @@ export default function LandingPage() {
 
                   <CardContent className="pt-0">
                     <Button
-                      className={`w-full mb-6 font-dm ${
-                        plan.popular
-                          ? "bg-blue-600 hover:bg-blue-600/90"
-                          : "bg-blue-700 hover:bg-blue-700/90"
-                      }`}
+                      className={`w-full mb-6 font-dm ${plan.popular
+                        ? "bg-blue-600 hover:bg-blue-600/90"
+                        : "bg-blue-700 hover:bg-blue-700/90"
+                        }`}
                       size="lg"
                     >
                       {plan.cta}
@@ -755,9 +771,8 @@ export default function LandingPage() {
                     {faq.question}
                   </span>
                   <ChevronDown
-                    className={`w-5 h-5 text-gray-500 transition-transform ${
-                      openFaq === index ? "rotate-180" : ""
-                    }`}
+                    className={`w-5 h-5 text-gray-500 transition-transform ${openFaq === index ? "rotate-180" : ""
+                      }`}
                   />
                 </button>
                 {openFaq === index && (
