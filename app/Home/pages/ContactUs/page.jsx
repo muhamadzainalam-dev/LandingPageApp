@@ -52,7 +52,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl lg:text-7xl font-bold text-gray-900 font-funnel leading-tight mb-6"
+            className="text-5xl lg:text-7xl font-bold text-gray-900  leading-tight mb-6"
           >
             Get in <span className="text-blue-600">Touch</span>
           </motion.h1>
@@ -81,7 +81,7 @@ export default function ContactPage() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none"></div>
               <div className="relative z-10">
-                <h2 className="text-3xl font-bold text-gray-900 font-funnel mb-6 text-center lg:text-left">
+                <h2 className="text-3xl font-bold text-gray-900  mb-6 text-center lg:text-left">
                   Send us a message
                 </h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -179,7 +179,7 @@ export default function ContactPage() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none"></div>
               <div className="relative z-10">
-                <h2 className="text-3xl font-bold text-gray-900 font-funnel mb-6 text-center lg:text-left">
+                <h2 className="text-3xl font-bold text-gray-900  mb-6 text-center lg:text-left">
                   Contact Information
                 </h2>
                 <div className="space-y-6 text-gray-700 text-lg">
@@ -218,7 +218,7 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <div className="mt-10">
-                  <h3 className="text-2xl font-bold text-gray-900 font-funnel mb-4">
+                  <h3 className="text-2xl font-bold text-gray-900  mb-4">
                     Business Hours
                   </h3>
                   <p className="text-gray-700">

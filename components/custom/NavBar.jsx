@@ -42,7 +42,7 @@ export default function NavBar() {
                     alt="logo"
                     className="h-10 w-10 rounded-md"
                   />
-                  <div className="text-2xl font-bold text-gray-900 font-funnel hero-font">
+                  <div className="text-2xl font-bold text-gray-900  hero-font">
                     Invocea
                   </div>
                 </div>

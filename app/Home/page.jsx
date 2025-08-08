@@ -300,7 +300,7 @@ export default function LandingPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-6xl hero-font font-bold text-gray-900 font-funnel leading-tight">
+              <h1 className="text-6xl hero-font font-bold text-gray-900  leading-tight">
                 <span className="text-gray-900">Track Time -</span>{" "}
                 <span className="text-blue-600">Generate Invoice -</span>
                 <span className="text-gray-900">Get Paid</span>{" "}
@@ -463,7 +463,7 @@ export default function LandingPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 font-funnel mb-4">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900  mb-4">
               Your Complete Toolkit For{" "}
               <span className="text-blue-600">Growth</span>
             </h2>
@@ -490,7 +490,7 @@ export default function LandingPage() {
                 <div className="bg-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 font-funnel">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 ">
                   {feature.title}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -513,7 +513,7 @@ export default function LandingPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 font-funnel mb-4">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900  mb-4">
               <span className="text-blue-600">How</span> it works
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
@@ -543,7 +543,7 @@ export default function LandingPage() {
                 {/* Number circle with icon */}
                 <div className="relative inline-block mb-6">
                   <motion.div
-                    className="bg-blue-600 text-white w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold font-funnel relative group-hover:bg-blue-600 transition-colors duration-300"
+                    className="bg-blue-600 text-white w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold  relative group-hover:bg-blue-600 transition-colors duration-300"
                     whileHover={{ rotate: 360 }}
                     transition={{ duration: 0.6 }}
                   >
@@ -562,7 +562,7 @@ export default function LandingPage() {
                   whileHover={{ y: -5 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4 font-funnel group-hover:text-blue-600 transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4  group-hover:text-blue-600 transition-colors duration-300">
                     {step.title}
                   </h3>
                   <p className="text-gray-700 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -587,7 +587,7 @@ export default function LandingPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 font-funnel mb-4">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900  mb-4">
               Loved by <span className="text-blue-600">thousands</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
@@ -742,7 +742,7 @@ export default function LandingPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 font-funnel mb-4">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900  mb-4">
               <span className="text-blue-600">Frequently</span> asked questions
             </h2>
             <p className="text-xl text-gray-700">
@@ -810,7 +810,7 @@ export default function LandingPage() {
             transition={{ duration: 0.8 }}
             className="text-center mb-12"
           >
-            <h2 className="font-funnel font-bold text-3xl md:text-4xl lg:text-5xl text-white mb-6">
+            <h2 className=" font-bold text-3xl md:text-4xl lg:text-5xl text-white mb-6">
               Ready to save time and grow your{" "}
               <span className="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
                 freelance business?
@@ -870,7 +870,7 @@ export default function LandingPage() {
                   >
                     <stat.icon className="h-6 w-6 text-white" />
                   </motion.div>
-                  <div className="font-funnel font-bold text-2xl text-white mb-1">
+                  <div className=" font-bold text-2xl text-white mb-1">
                     {stat.value}
                   </div>
                   <div className="font-dm text-white/80 text-sm">

@@ -98,7 +98,7 @@ export default function BlogPage() {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl lg:text-7xl font-bold text-gray-900 font-funnel leading-tight mb-6"
+            className="text-5xl lg:text-7xl font-bold text-gray-900  leading-tight mb-6"
           >
             Our <span className="text-blue-600">Blog</span>
           </motion.h1>
@@ -171,7 +171,7 @@ export default function BlogPage() {
                     <p className="text-sm text-blue-600 font-semibold mb-2">
                       {post.category}
                     </p>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 font-funnel group-hover:text-blue-500 transition-colors">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3  group-hover:text-blue-500 transition-colors">
                       {post.title}
                     </h3>
                     <p className="text-gray-700 text-sm mb-4">

@@ -9,7 +9,7 @@ const TimeTracker = () => {
     <DashboardLayout>
       <div className="space-y-8">
         <TimeTrackerWidget />
-        <RecentActivity />
+        {/* <RecentActivity /> */}
         {/* <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
           <div className="xl:col-span-1">
             <TimeTrackerWidget />

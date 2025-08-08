@@ -30,7 +30,7 @@ export default function PrivacyPolicyPage() {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl lg:text-7xl font-bold text-gray-900 font-funnel leading-tight mb-6"
+            className="text-5xl lg:text-7xl font-bold text-gray-900  leading-tight mb-6"
           >
             Privacy <span className="text-blue-600">Policy</span>
           </motion.h1>
@@ -56,10 +56,10 @@ export default function PrivacyPolicyPage() {
             protects You.
           </p>
 
-          <h2 className="text-3xl font-bold text-gray-900 font-funnel mt-12 mb-4">
+          <h2 className="text-3xl font-bold text-gray-900  mt-12 mb-4">
             Interpretation and Definitions
           </h2>
-          <h3 className="text-2xl font-bold text-gray-900 font-funnel mb-2">
+          <h3 className="text-2xl font-bold text-gray-900  mb-2">
             Interpretation
           </h3>
           <p>
@@ -69,7 +69,7 @@ export default function PrivacyPolicyPage() {
             singular or in plural.
           </p>
 
-          <h3 className="text-2xl font-bold text-gray-900 font-funnel mb-2">
+          <h3 className="text-2xl font-bold text-gray-900  mb-2">
             Definitions
           </h3>
           <ul className="list-disc list-inside space-y-2">
@@ -101,13 +101,13 @@ export default function PrivacyPolicyPage() {
             </li>
           </ul>
 
-          <h2 className="text-3xl font-bold text-gray-900 font-funnel mt-12 mb-4">
+          <h2 className="text-3xl font-bold text-gray-900  mt-12 mb-4">
             Collecting and Using Your Personal Data
           </h2>
-          <h3 className="text-2xl font-bold text-gray-900 font-funnel mb-2">
+          <h3 className="text-2xl font-bold text-gray-900  mb-2">
             Types of Data Collected
           </h3>
-          <h4 className="text-xl font-bold text-gray-900 font-funnel mb-2">
+          <h4 className="text-xl font-bold text-gray-900  mb-2">
             Personal Data
           </h4>
           <p>
@@ -122,7 +122,7 @@ export default function PrivacyPolicyPage() {
             <li>Usage Data</li>
           </ul>
 
-          <h4 className="text-xl font-bold text-gray-900 font-funnel mb-2">
+          <h4 className="text-xl font-bold text-gray-900  mb-2">
             Usage Data
           </h4>
           <p>
@@ -134,7 +134,7 @@ export default function PrivacyPolicyPage() {
             diagnostic data.
           </p>
 
-          <h3 className="text-2xl font-bold text-gray-900 font-funnel mb-2">
+          <h3 className="text-2xl font-bold text-gray-900  mb-2">
             Use of Your Personal Data
           </h3>
           <p>The Company may use Personal Data for the following purposes:</p>
@@ -172,7 +172,7 @@ export default function PrivacyPolicyPage() {
             </li>
           </ul>
 
-          <h2 className="text-3xl font-bold text-gray-900 font-funnel mt-12 mb-4">
+          <h2 className="text-3xl font-bold text-gray-900  mt-12 mb-4">
             Security of Your Personal Data
           </h2>
           <p>
@@ -183,7 +183,7 @@ export default function PrivacyPolicyPage() {
             cannot guarantee its absolute security.
           </p>
 
-          <h2 className="text-3xl font-bold text-gray-900 font-funnel mt-12 mb-4">
+          <h2 className="text-3xl font-bold text-gray-900  mt-12 mb-4">
             Changes to this Privacy Policy
           </h2>
           <p>

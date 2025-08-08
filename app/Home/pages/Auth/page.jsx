@@ -84,7 +84,7 @@ export default function AuthPage() {
               Back to Home
             </Link>
 
-            <h1 className="text-5xl lg:text-6xl font-bold text-gray-800 font-funnel leading-tight mb-6">
+            <h1 className="text-5xl lg:text-6xl font-bold text-gray-800  leading-tight mb-6">
               Welcome to <span className="text-blue-600">TimeTracker</span>
             </h1>
 
@@ -142,7 +142,7 @@ export default function AuthPage() {
               <div className="text-center mb-8">
                 <AnimatePresence mode="wait">
                   <motion.div key={isLogin ? "login" : "signup"} {...slideIn}>
-                    <h2 className="text-3xl font-bold text-gray-800 font-funnel mb-2">
+                    <h2 className="text-3xl font-bold text-gray-800  mb-2">
                       {isLogin ? "Welcome back" : "Create account"}
                     </h2>
                     <p className="text-gray-700">

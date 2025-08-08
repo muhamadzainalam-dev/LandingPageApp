@@ -13,15 +13,15 @@ export function DashboardHeader({ sidebarWidth }) {
     switch (pathname) {
       case '/':
         return 'Dashboard';
-      case '/pages/TimeTracker':
+      case '/Dashboard/pages/TimeTracker':
         return 'Time Tracker';
-      case '/pages/Projects':
+      case '/Dashboard/pages/Projects':
         return 'Projects';
-      case '/pages/Invoices':
+      case '/Dashboard/pages/Invoices':
         return 'Invoices';
-      case '/pages/Reports':
+      case '/Dashboard/pages/Reports':
         return 'Reports';
-      case '/pages/Settings':
+      case '/Dashboard/pages/Settings':
         return 'Settings';
       default:
         return 'Dashboard';

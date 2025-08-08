@@ -63,7 +63,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl lg:text-7xl font-bold text-gray-900 font-funnel leading-tight mb-6"
+            className="text-5xl lg:text-7xl font-bold text-gray-900  leading-tight mb-6"
           >
             About <span className="text-blue-600">TimeTracker</span>
           </motion.h1>
@@ -89,7 +89,7 @@ export default function AboutPage() {
             className="grid md:grid-cols-2 gap-12 items-center"
           >
             <div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 font-funnel mb-6">
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900  mb-6">
                 Our Story
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -129,7 +129,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 font-funnel mb-4">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900  mb-4">
               Our <span className="text-blue-600">Values</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
@@ -148,7 +148,7 @@ export default function AboutPage() {
               variants={staggerItem}
               className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg text-center"
             >
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 font-funnel">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 ">
                 Simplicity
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -160,7 +160,7 @@ export default function AboutPage() {
               variants={staggerItem}
               className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg text-center"
             >
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 font-funnel">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 ">
                 Empowerment
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -172,7 +172,7 @@ export default function AboutPage() {
               variants={staggerItem}
               className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg text-center"
             >
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 font-funnel">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 ">
                 Reliability
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -193,7 +193,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 font-funnel mb-4">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900  mb-4">
               Meet Our <span className="text-blue-600">Team</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
@@ -222,7 +222,7 @@ export default function AboutPage() {
                   height={120}
                   className="rounded-full mx-auto mb-6 border-4 border-blue-600/20"
                 />
-                <h3 className="text-2xl font-bold text-gray-900 mb-2 font-funnel">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2 ">
                   {member.name}
                 </h3>
                 <p className="text-blue-600 font-semibold mb-4">
