@@ -2,7 +2,7 @@ import RootProvider from "@/components/dashboard_components/RootProvider";
 import "./globals.css";
 
 export const metadata = {
-  title: "Invocea | Dashboard",
+  title: "ZennyTrack | Dashboard",
   description: "Your Invoicing Solution",
 };
 

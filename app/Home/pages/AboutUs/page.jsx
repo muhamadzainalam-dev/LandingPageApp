@@ -27,22 +27,22 @@ const staggerItem = {
 export default function AboutPage() {
   const teamMembers = [
     {
-      name: "Jane Doe",
+      name: "Muhammad Zain",
       role: "CEO & Founder",
-      image: "/placeholder.svg?height=120&width=120&text=Jane",
-      bio: "Jane is a visionary leader with over 15 years of experience in SaaS and product development. She founded TimeTracker to empower freelancers.",
+      image: "/ceo-founder.jpeg",
+      bio: "Muhammad Zain is a visionary leader and tech entrepreneur with a strong passion for building impactful digital products. He founded TimeTracker to empower freelancers and solo workers to manage their time and earnings effortlessly.",
     },
     {
-      name: "John Smith",
+      name: "Shahmir Ali",
+      role: "Manager of Operations",
+      image: "/manager.jpg",
+      bio: "Shahmir oversees operations with a focus on efficiency and growth. His expertise in workflow optimization and team coordination helps streamline services for freelancers worldwide.",
+    },
+    {
+      name: "Muhammad Zain",
       role: "Lead Developer",
-      image: "/placeholder.svg?height=120&width=120&text=John",
-      bio: "John is a full-stack wizard passionate about building scalable and user-friendly applications. He leads our engineering efforts.",
-    },
-    {
-      name: "Emily White",
-      role: "Head of Marketing",
-      image: "/placeholder.svg?height=120&width=120&text=Emily",
-      bio: "Emily drives our growth and brand strategy. Her expertise in digital marketing helps us reach freelancers worldwide.",
+      image: "/ceo-founder.jpeg",
+      bio: "As Lead Developer, Muhammad Zain specializes in creating scalable, user-friendly SaaS platforms. He drives the engineering team to deliver seamless, high-performance solutions.",
     },
   ];
 
@@ -50,7 +50,6 @@ export default function AboutPage() {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 lg:py-32">
-        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <Link
             href="/"
@@ -65,7 +64,7 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             className="text-5xl lg:text-7xl font-bold text-gray-900  leading-tight mb-6"
           >
-            About <span className="text-blue-600">TimeTracker</span>
+            About <span className="text-blue-600">ZennyTrack</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 60 }}
@@ -93,23 +92,23 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                TimeTracker was founded in 2020 by a group of passionate
-                freelancers who experienced firsthand the challenges of managing
-                time and finances. We realized that existing tools were either
-                too complex, too expensive, or lacked the specific features
-                freelancers truly needed.
+                TimeTracker was founded in 2025 to solve a problem faced by
+                countless freelancers and independent professionals: managing
+                time and finances without drowning in overly complex or
+                overpriced tools. From the start, our vision has been to create
+                a simple, intuitive, and powerful platform that empowers people
+                to focus on their craft while we take care of the administrative
+                details.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Our mission became clear: build a simple, intuitive, and
-                powerful platform that helps freelancers focus on what they do
-                best – their craft – while we handle the administrative burden.
-                Since then, we've grown into a trusted partner for thousands of
-                independent professionals worldwide.
+                In a short time, TimeTracker has grown from an idea into a
+                trusted solution, helping users around the world streamline
+                their workflows, track their productivity, and get paid faster.
               </p>
             </div>
             <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/our-story-banner.png"
                 alt="Our Story"
                 layout="fill"
                 objectFit="cover"

@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation"; // ✅ Import pathname
 export default function Footer() {
   const pathname = usePathname();
 
-  // ✅ Hide footer on /Auth route
+  // Hide footer on /Auth route
   if (pathname === "/Home/pages/Auth") return null;
 
   const footerSections = [
@@ -15,7 +15,7 @@ export default function Footer() {
       title: "Product",
       links: [
         { name: "Features", href: "#features" },
-        { name: "Pricing", href: "#pricing" },
+        // { name: "Pricing", href: "#pricing" },
         { name: "FAQ's", href: "#faq" },
         { name: "Testimonials", href: "#testimonials" },
       ],
@@ -25,28 +25,33 @@ export default function Footer() {
       links: [
         { name: "About", href: "/Home/pages/AboutUs" },
         { name: "Blog", href: "/Home/pages/Blog" },
-        { name: "Careers", href: "#" },
         { name: "Contact", href: "/Home/pages/ContactUs" },
       ],
     },
     {
-      title: "Support",
-      links: [{ name: "Contact", href: "/Home/pages/ContactUs" }],
+      title: "Stay Connected",
+      links: [
+        { name: "Instagram", href: "https://instagram.com/zennytrack" },
+        {
+          name: "Facebook",
+          href: "https://www.facebook.com/profile.php?id=61579216805718",
+        },
+        { name: "YouTube", href: "https://youtube.com/@YourBrandName" },
+        { name: "Pinterest", href: "https://pinterest.com/YourBrandName" },
+      ],
     },
+
+    // {
+    //   title: "Support",
+    //   links: [{ name: "Contact", href: "/Home/pages/ContactUs" }],
+    // },
     {
       title: "Legal",
       links: [
         { name: "Privacy Policy", href: "/Home/pages/PrivicyPolicy" },
-        { name: "Terms of Service", href: "/Home/pages/Terms" },
+        // { name: "Terms of Service", href: "/Home/pages/Terms" },
       ],
     },
-  ];
-
-  const socialLinks = [
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Mail, href: "#", label: "Email" },
   ];
 
   return (
@@ -69,7 +74,7 @@ export default function Footer() {
                     <img src="/logo.jpg" alt="logo" />
                   </span>
                 </div>
-                <span className="font-bold text-xl">Invocea</span>
+                <span className="font-bold text-xl">ZennyTrack</span>
               </div>
               <p className="font-dm text-white/80 mb-6 max-w-sm">
                 The modern time tracking and invoicing solution for freelancers
@@ -78,17 +83,39 @@ export default function Footer() {
 
               {/* Social links */}
               <div className="flex space-x-4">
-                {socialLinks.map((social, index) => (
-                  <motion.a
-                    key={index}
-                    href={social.href}
-                    whileHover={{ scale: 1.1, y: -2 }}
-                    className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-200"
-                    aria-label={social.label}
-                  >
-                    <social.icon className="h-5 w-5" />
-                  </motion.a>
-                ))}
+                <motion.a
+                  href="https://x.com/zennytrack"
+                  target="_blank"
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-200"
+                >
+                  <Twitter className="h-5 w-5" />
+                </motion.a>
+                <motion.a
+                  href="https://www.linkedin.com/in/muhamadzain-dev/"
+                  target="_blank"
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-200"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </motion.a>
+                <motion.a
+                  href="https://github.com/zennytrack"
+                  target="_blank"
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-200"
+                >
+                  <Github className="h-5 w-5" />
+                </motion.a>
+                <motion.a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=zennytrack@gmail.com&su=I%20want%20to%20learn%20more&body=Hello%2C%0AI%20would%20like%20to%20learn%20more%20about%20your%20services."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-200"
+                >
+                  <Mail className="h-5 w-5" />
+                </motion.a>
               </div>
             </motion.div>
 
@@ -127,7 +154,7 @@ export default function Footer() {
             className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center"
           >
             <p className="font-dm text-white/60 text-sm mb-4 md:mb-0">
-              © 2025 Invocea. All rights reserved.
+              © 2025 ZennyTrack. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a

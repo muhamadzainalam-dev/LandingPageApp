@@ -4,12 +4,6 @@ import Link from "next/link";
 import { ArrowLeft, Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
 
-const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
-};
-
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
@@ -179,7 +173,7 @@ export default function ContactPage() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none"></div>
               <div className="relative z-10">
-                <h2 className="text-3xl font-bold text-gray-900  mb-6 text-center lg:text-left">
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center lg:text-left">
                   Contact Information
                 </h2>
                 <div className="space-y-6 text-gray-700 text-lg">
@@ -188,10 +182,10 @@ export default function ContactPage() {
                     <div>
                       <p className="font-semibold">Email Us:</p>
                       <a
-                        href="mailto:support@timetracker.com"
+                        href="mailto:zennytrack@gmail.com"
                         className="hover:underline text-blue-600"
                       >
-                        support@timetracker.com
+                        zennytrack@gmail.com
                       </a>
                     </div>
                   </div>
@@ -200,31 +194,57 @@ export default function ContactPage() {
                     <div>
                       <p className="font-semibold">Call Us:</p>
                       <a
-                        href="tel:+1234567890"
+                        href="tel:+923163834219"
                         className="hover:underline text-blue-600"
                       >
-                        +1 (234) 567-890
+                        +92 316 343 4219
                       </a>
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <MapPin className="w-6 h-6 text-blue-600 mr-4 flex-shrink-0 mt-1" />
+                    <div className="w-6 h-6 text-blue-600 mr-4 flex-shrink-0 mt-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        className="w-full h-full"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.29 4.29 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04 4.28 4.28 0 00-7.29 3.9 12.14 12.14 0 01-8.82-4.47 4.28 4.28 0 001.32 5.71 4.25 4.25 0 01-1.94-.54v.05a4.28 4.28 0 003.43 4.2 4.27 4.27 0 01-1.93.07 4.28 4.28 0 004 2.97A8.6 8.6 0 012 19.54a12.13 12.13 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.39-.01-.58A8.71 8.71 0 0024 5.5a8.48 8.48 0 01-2.54.7z" />
+                      </svg>
+                    </div>
                     <div>
-                      <p className="font-semibold">Our Office:</p>
-                      <p>123 Freelance Way,</p>
-                      <p>Suite 456,</p>
-                      <p>Creative City, CA 90210</p>
+                      <p className="font-semibold">Follow Us:</p>
+                      <a
+                        href="https://twitter.com/zennytrack"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline text-blue-600"
+                      >
+                        Twitter
+                      </a>{" "}
+                      |
+                      <a
+                        href="https://linkedin.com/company/zennytrack"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline text-blue-600 ml-1"
+                      >
+                        LinkedIn
+                      </a>
                     </div>
                   </div>
                 </div>
                 <div className="mt-10">
-                  <h3 className="text-2xl font-bold text-gray-900  mb-4">
-                    Business Hours
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Support Availability
                   </h3>
                   <p className="text-gray-700">
-                    Monday - Friday: 9:00 AM - 5:00 PM (PST)
+                    We’re here to assist you 24/7 via email and chat.
                   </p>
-                  <p className="text-gray-700">Saturday - Sunday: Closed</p>
+                  <p className="text-gray-700">
+                    Phone support is available Monday–Friday, 9:00 AM – 6:00 PM
+                    PKT.
+                  </p>
                 </div>
               </div>
             </motion.div>

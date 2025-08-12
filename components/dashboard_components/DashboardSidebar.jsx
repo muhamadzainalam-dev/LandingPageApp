@@ -63,7 +63,7 @@ export function DashboardSidebar({ isCollapsed, setIsCollapsed }) {
               </div>
               <div>
                 <span className="font-heading font-bold text-xl text-sidebar-foreground">
-                  Invocea
+                  ZennyTrack
                 </span>
                 <p className="text-xs text-sidebar-foreground/60">Dashboard</p>
               </div>

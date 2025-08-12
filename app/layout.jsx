@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Invocea | Your Invoicing Solution",
+  title: "ZennyTrack | Your Invoicing Solution",
   description: "Your Invoicing Solution",
 };
 
