@@ -1,4 +1,5 @@
 import "./globals.css";
+import { SmoothCursor } from "@/components/ui/smooth-cursor";
 
 export const metadata = {
   title: "ZennyTrack | Your Invoicing Solution",
@@ -7,8 +8,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <div>
+      <SmoothCursor />
+      <html lang="en">
+        <body>{children}</body>
+      </html>
+    </div>
   );
 }

@@ -307,7 +307,7 @@ export default function LandingPage() {
                 generate professional invoices. Stop losing money on unbilled
                 hours.
               </p>
-              <Link href="/Home/pages/Auth">
+              <Link href="#waitllist">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

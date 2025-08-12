@@ -23,8 +23,8 @@ export default function Footer() {
     {
       title: "Company",
       links: [
-        { name: "About", href: "/Home/pages/AboutUs" },
-        { name: "Blog", href: "/Home/pages/Blog" },
+        { name: "About Us", href: "/Home/pages/AboutUs" },
+        // { name: "Blog", href: "/Home/pages/Blog" },
         { name: "Contact", href: "/Home/pages/ContactUs" },
       ],
     },
@@ -36,8 +36,11 @@ export default function Footer() {
           name: "Facebook",
           href: "https://www.facebook.com/profile.php?id=61579216805718",
         },
-        { name: "YouTube", href: "https://youtube.com/@YourBrandName" },
-        { name: "Pinterest", href: "https://pinterest.com/YourBrandName" },
+        { name: "YouTube", href: "https://www.youtube.com/@zenny_track" },
+        {
+          name: "Pinterest",
+          href: "https://www.pinterest.com/zennytrack",
+        },
       ],
     },
 
@@ -162,12 +165,6 @@ export default function Footer() {
                 className="font-dm text-white/60 hover:text-white text-sm transition-colors duration-200"
               >
                 Privacy
-              </a>
-              <a
-                href="/Home/pages/Terms"
-                className="font-dm text-white/60 hover:text-white text-sm transition-colors duration-200"
-              >
-                Terms
               </a>
               <a
                 href="/Home/pages/ContactUs"

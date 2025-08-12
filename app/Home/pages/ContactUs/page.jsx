@@ -215,7 +215,7 @@ export default function ContactPage() {
                     <div>
                       <p className="font-semibold">Follow Us:</p>
                       <a
-                        href="https://twitter.com/zennytrack"
+                        href="https://x.com/zennytrack"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:underline text-blue-600"
@@ -224,7 +224,7 @@ export default function ContactPage() {
                       </a>{" "}
                       |
                       <a
-                        href="https://linkedin.com/company/zennytrack"
+                        href="https://www.linkedin.com/in/muhamadzain-dev"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:underline text-blue-600 ml-1"
