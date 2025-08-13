@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block private/authenticated areas
+Disallow: /dashboard/
+Disallow: /api/
+
+# Point to sitemap
+Sitemap: https://zennytrack.vercel.app/sitemap.xml

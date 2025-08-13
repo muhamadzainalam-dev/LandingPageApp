@@ -8,7 +8,7 @@ export default function Footer() {
   const pathname = usePathname();
 
   // Hide footer on /Auth route
-  if (pathname === "/Home/pages/Auth") return null;
+  if (pathname === "/pages/Auth") return null;
 
   const footerSections = [
     {
@@ -23,9 +23,9 @@ export default function Footer() {
     {
       title: "Company",
       links: [
-        { name: "About Us", href: "/Home/pages/AboutUs" },
-        // { name: "Blog", href: "/Home/pages/Blog" },
-        { name: "Contact", href: "/Home/pages/ContactUs" },
+        { name: "About Us", href: "/pages/AboutUs" },
+        // { name: "Blog", href: "/pages/Blog" },
+        { name: "Contact", href: "/pages/ContactUs" },
       ],
     },
     {
@@ -46,13 +46,13 @@ export default function Footer() {
 
     // {
     //   title: "Support",
-    //   links: [{ name: "Contact", href: "/Home/pages/ContactUs" }],
+    //   links: [{ name: "Contact", href: "/pages/ContactUs" }],
     // },
     {
       title: "Legal",
       links: [
-        { name: "Privacy Policy", href: "/Home/pages/PrivicyPolicy" },
-        // { name: "Terms of Service", href: "/Home/pages/Terms" },
+        { name: "Privacy Policy", href: "/pages/PrivicyPolicy" },
+        // { name: "Terms of Service", href: "/pages/Terms" },
       ],
     },
   ];
@@ -161,13 +161,13 @@ export default function Footer() {
             </p>
             <div className="flex space-x-6">
               <a
-                href="/Home/pages/PrivicyPolicy"
+                href="/pages/PrivicyPolicy"
                 className="font-dm text-white/60 hover:text-white text-sm transition-colors duration-200"
               >
                 Privacy
               </a>
               <a
-                href="/Home/pages/ContactUs"
+                href="/pages/ContactUs"
                 className="font-dm text-white/60 hover:text-white text-sm transition-colors duration-200"
               >
                 Contact Us

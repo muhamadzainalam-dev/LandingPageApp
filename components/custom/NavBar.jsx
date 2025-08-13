@@ -21,14 +21,14 @@ export default function NavBar() {
   ];
 
   const hideNavItems = [
-    "/Home/pages/AboutUs",
-    "/Home/pages/PrivicyPolicy",
-    "/Home/pages/TermsOfService",
-    "/Home/pages/ContactUs",
-    "/Home/pages/Blog",
-    "/Home/pages/Terms",
-    "/Home/pages/Auth",
-    "/Home/pages/404",
+    "/pages/AboutUs",
+    "/pages/PrivicyPolicy",
+    "/pages/TermsOfService",
+    "/pages/ContactUs",
+    "/pages/Blog",
+    "/pages/Terms",
+    "/pages/Auth",
+    "/pages/404",
   ].includes(pathname);
 
   return (
@@ -116,12 +116,14 @@ export default function NavBar() {
                   {item.name}
                 </a>
               ))}
-              <Button
-                variant="default"
-                className="w-full bg-blue-400 hover:bg-blue-400/90 font-dm"
-              >
-                Start Free
-              </Button>
+              <Link href="#waitllist">
+                <Button
+                  variant="default"
+                  className="w-full bg-blue-500 hover:bg-blue-500/90 font-dm"
+                >
+                  Join News Letter
+                </Button>
+              </Link>
             </div>
           </motion.div>
         )}
