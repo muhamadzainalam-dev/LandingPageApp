@@ -1,4 +1,5 @@
 import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import NavBar from "@/components/custom/NavBar";
 import Footer from "@/components/custom/Footer";
@@ -214,6 +215,7 @@ export default function RootLayout({ children }) {
 
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-N4TTGQJQXW" />
     </html>
   );
 }
