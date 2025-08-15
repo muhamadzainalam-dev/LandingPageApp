@@ -1,5 +1,5 @@
 import "./globals.css";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import NavBar from "@/components/custom/NavBar";
 import Footer from "@/components/custom/Footer";
@@ -107,9 +107,6 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-verification-code",
-  },
   applicationName: "ZennyTrack",
   referrer: "origin-when-cross-origin",
   twitter: {
@@ -195,6 +192,20 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify(orgJsonLd),
           }}
         />
+
+        {/* Google Analytics Script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17417927320"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17417927320');
+          `}
+        </Script>
       </head>
       <body className="antialiased">
         <SmoothCursor />
@@ -215,7 +226,6 @@ export default function RootLayout({ children }) {
 
         <Footer />
       </body>
-      <GoogleAnalytics gaId="G-N4TTGQJQXW" />
     </html>
   );
 }
