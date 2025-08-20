@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://zennytrack.vercel.app",
+  siteUrl: "https://agayn.vercel.app",
   generateRobotsTxt: false, // we already have our custom robots.txt
   sitemapSize: 7000,
 };

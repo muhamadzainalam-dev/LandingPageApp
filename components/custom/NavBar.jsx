@@ -15,7 +15,7 @@ export default function NavBar() {
     { name: "Features", href: "#features" },
     { name: "Workflow", href: "#howitworks" },
     { name: "Testimonials", href: "#testimonials" },
-    { name: "FAQ's", href: "#faq" },
+    { name: "FAQ", href: "#faq" },
     // { name: "Pricing", href: "#pricing" },
     // { name: "Login", href: "#login" },
   ];
@@ -47,12 +47,10 @@ export default function NavBar() {
               transition={{ delay: 0.2 }}
               className="flex items-center space-x-2"
             >
-              <div className="w-10 h-10 bg-[#155dfd] to-blue-700 rounded-lg flex items-center justify-center overflow-hidden">
-                <img src="/logo.jpg" alt="" className="h-8 w-8" />
+              <div className="w-10 h-10 bg-blue-600/20 to-blue-700 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="/logo.png" alt="" className="h-8 w-8" />
               </div>
-              <span className="font-bold text-xl text-gray-900">
-                ZennyTrack
-              </span>
+              <span className="font-bold text-xl text-gray-900">AGAYN</span>
             </motion.div>
           </Link>
 

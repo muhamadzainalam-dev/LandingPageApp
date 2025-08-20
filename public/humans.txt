@@ -1,7 +1,7 @@
 /* TEAM */
-Developer: ZennyTrack Development Team
-Contact: hello@zennytrack.com
-Website: https://zennytrack.vercel.app
+Developer: Muhammad Zain Alam
+Contact: hello@agayn.com
+Website: https://agayn.vercel.app
 
 /* SITE */
 Last update: 2025-08-14

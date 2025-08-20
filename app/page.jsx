@@ -29,8 +29,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Hero from "@/components/custom/Hero";
 
-// Memoized animation variants to prevent recreation on re-renders
 const staggerContainer = {
   animate: {
     transition: {
@@ -64,12 +64,10 @@ const itemVariants = {
   },
 };
 
-// Extracted AuthRedirect component for better separation of concerns
 const AuthRedirect = () => {
   const router = useRouter();
 
   useEffect(() => {
-    // Optimize localStorage check with error handling
     try {
       const isAuthenticated = localStorage.getItem("Authenticated");
       if (isAuthenticated === "true") {
@@ -80,7 +78,7 @@ const AuthRedirect = () => {
     }
   }, [router]);
 
-  return null; // or a loader/spinner
+  return null;
 };
 
 export default function LandingPage() {
@@ -335,125 +333,8 @@ export default function LandingPage() {
       <AuthRedirect />
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section
-          className="relative overflow-hidden bg-[#fafcfd] py-20 lg:py-25 lg:pt-35"
-          aria-labelledby="hero-title"
-        >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -60 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-              >
-                <h1
-                  id="hero-title"
-                  className="text-5xl md:text-6xl hero-font font-bold text-gray-900 leading-tight"
-                >
-                  <span className="text-gray-900">Track Time -</span>{" "}
-                  <span className="text-blue-600">Generate Invoice -</span>
-                  <span className="text-gray-900">Get Paid</span>
-                </h1>
-                <p className="text-xl text-gray-700 mt-6 leading-relaxed">
-                  ZennyTrack The simplest way to track time, manage projects,
-                  and generate professional invoices. Stop losing money on
-                  unbilled hours.
-                </p>
-                <Link
-                  href="#waitllist"
-                  aria-label="Join our waitlist to get early access"
-                >
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold mt-8 hover:bg-blue-700 shadow-lg transition-colors focus:ring-4 focus:ring-blue-300 focus:outline-none"
-                  >
-                    Join Waitlist Now
-                  </motion.button>
-                </Link>
-                {/* <p className="text-sm text-gray-500 mt-3">
-                  No credit card required • 14-day free trial
-                </p> */}
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 60 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="relative"
-              >
-                <div className="bg-white/80 backdrop-blur-xl rounded-2xl shadow-2xl p-8 border border-white/20 relative overflow-hidden">
-                  {/* Glassmorphism overlay */}
-                  <div
-                    className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent pointer-events-none"
-                    aria-hidden="true"
-                  ></div>
-                  <div className="relative z-10">
-                    <div className="space-y-4">
-                      <div className="flex items-center justify-between">
-                        <h3 className="font-semibold text-gray-900">
-                          Today's Activity
-                        </h3>
-                        <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                          Active
-                        </div>
-                      </div>
-                      <div className="space-y-3">
-                        <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                          <div className="flex items-center space-x-3">
-                            <div
-                              className="w-3 h-3 bg-blue-600 rounded-full"
-                              aria-hidden="true"
-                            ></div>
-                            <span className="text-gray-700">
-                              Website Redesign
-                            </span>
-                          </div>
-                          <span className="font-mono text-gray-900">
-                            2:34:12
-                          </span>
-                        </div>
-                        <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                          <div className="flex items-center space-x-3">
-                            <div
-                              className="w-3 h-3 bg-green-500 rounded-full"
-                              aria-hidden="true"
-                            ></div>
-                            <span className="text-gray-700">
-                              Client Meeting
-                            </span>
-                          </div>
-                          <span className="font-mono text-gray-900">
-                            1:15:30
-                          </span>
-                        </div>
-                        <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                          <div className="flex items-center space-x-3">
-                            <div
-                              className="w-3 h-3 bg-purple-500 rounded-full"
-                              aria-hidden="true"
-                            ></div>
-                            <span className="text-gray-700">Code Review</span>
-                          </div>
-                          <span className="font-mono text-gray-900">
-                            0:45:22
-                          </span>
-                        </div>
-                      </div>
-                      <div className="pt-4 border-t border-gray-200">
-                        <div className="flex justify-between items-center">
-                          <span className="text-gray-600">Total Today</span>
-                          <span className="text-2xl font-bold text-gray-900 font-mono">
-                            4:35:04
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          </div>
+        <section className="pt-10">
+          <Hero />
         </section>
 
         {/* Trusted By Section */}
