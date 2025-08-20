@@ -2,7 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Twitter, Linkedin, Github, Mail } from "lucide-react";
-import { usePathname } from "next/navigation"; // ✅ Import pathname
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -71,14 +72,20 @@ export default function Footer() {
               transition={{ duration: 0.8 }}
               className="lg:col-span-2"
             >
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-700 to-blue-600 rounded-md overflow-hidden flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">
-                    <img src="/logo.jpg" alt="logo" />
-                  </span>
-                </div>
-                <span className="font-bold text-xl">ZennyTrack</span>
-              </div>
+              {/* Logo */}
+              <Link href="#">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.2 }}
+                  className="flex items-center space-x-2 mb-4"
+                >
+                  <div className="w-10 h-10 bg-blue-600/20 to-blue-700 rounded-lg flex items-center justify-center overflow-hidden">
+                    <img src="/logo.png" alt="" className="h-8 w-8" />
+                  </div>
+                  <span className="font-bold text-xl">AGAYN</span>
+                </motion.div>
+              </Link>
               <p className="font-dm text-white/80 mb-6 max-w-sm">
                 The modern time tracking and invoicing solution for freelancers
                 and teams who want to focus on their work, not their admin.
@@ -157,7 +164,7 @@ export default function Footer() {
             className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center"
           >
             <p className="font-dm text-white/60 text-sm mb-4 md:mb-0">
-              © 2025 ZennyTrack. All rights reserved.
+              © 2025 AGAYN. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a

@@ -1,19 +1,19 @@
 {
-  "name": "ZennyTrack - Time Tracking & Invoicing",
-  "short_name": "ZennyTrack",
+  "name": "AGAYN - Time Tracking & Invoicing",
+  "short_name": "AGAYN",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2563eb",
-  "description": "Simplify your time tracking and invoicing with ZennyTrack, the all-in-one SaaS tool for freelancers and solo workers.",
+  "description": "Simplify your time tracking and invoicing with AGAYN, the all-in-one SaaS tool for freelancers and solo workers.",
   "icons": [
     {
-      "src": "/logo.jpg",
+      "src": "/logo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/logo.jpg",
+      "src": "/logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }

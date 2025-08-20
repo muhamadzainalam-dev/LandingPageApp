@@ -50,10 +50,10 @@ export default function PrivacyPolicyPage() {
       <section className="pb-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-gray-700 leading-relaxed space-y-8">
           <p>
-            This Privacy Policy explains how TimeTracker ("we", "our", "us")
-            collects, uses, and safeguards your personal and business data when
-            you use our time tracking, invoicing, and productivity services. By
-            using TimeTracker, you agree to the terms outlined in this policy.
+            This Privacy Policy explains how AGAYN ("we", "our", "us") collects,
+            uses, and safeguards your personal and business data when you use
+            our time tracking, invoicing, and productivity services. By using
+            AGAYN, you agree to the terms outlined in this policy.
           </p>
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">
