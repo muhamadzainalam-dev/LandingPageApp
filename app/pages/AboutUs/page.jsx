@@ -64,7 +64,7 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             className="text-5xl lg:text-7xl font-bold text-gray-900  leading-tight mb-6"
           >
-            About <span className="text-blue-600">AGAYN</span>
+            About <span className="text-blue-600">ZennyTrack</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 60 }}
@@ -92,17 +92,18 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                AGAYN was founded in 2025 to solve a problem faced by countless
-                freelancers and independent professionals: managing time and
-                finances without drowning in overly complex or overpriced tools.
-                From the start, our vision has been to create a simple,
-                intuitive, and powerful platform that empowers people to focus
-                on their craft while we take care of the administrative details.
+                TimeTracker was founded in 2025 to solve a problem faced by
+                countless freelancers and independent professionals: managing
+                time and finances without drowning in overly complex or
+                overpriced tools. From the start, our vision has been to create
+                a simple, intuitive, and powerful platform that empowers people
+                to focus on their craft while we take care of the administrative
+                details.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                In a short time, AGAYN has grown from an idea into a trusted
-                solution, helping users around the world streamline their
-                workflows, track their productivity, and get paid faster.
+                In a short time, TimeTracker has grown from an idea into a
+                trusted solution, helping users around the world streamline
+                their workflows, track their productivity, and get paid faster.
               </p>
             </div>
             <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl">
