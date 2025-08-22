@@ -88,6 +88,21 @@ export default function WaitlistSection() {
       setIsSubmitted(true);
       setShowSuccess(true);
 
+      // Fire Meta Pixel custom event
+      if (typeof window !== "undefined" && window.fbq) {
+        window.fbq("trackCustom", "NewsletterSignup", {
+          email: email, // optional
+        });
+      }
+
+      setWaitlistCount((prev) => {
+        const newCount = prev + 1;
+        if (typeof window !== "undefined") {
+          window.waitlistCount = newCount;
+        }
+        return newCount;
+      });
+
       setWaitlistCount((prev) => {
         const newCount = prev + 1;
         if (typeof window !== "undefined") {
@@ -114,6 +129,13 @@ export default function WaitlistSection() {
     }
 
     setIsLoading(false);
+
+    // 4️⃣ Fire Meta Pixel event
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("trackCustom", "NewsletterSignup", {
+        email: email, // optional (don’t use if you’re worried about privacy)
+      });
+    }
   };
 
   const benefits = [
