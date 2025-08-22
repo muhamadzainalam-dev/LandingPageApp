@@ -1,5 +1,6 @@
 "use client";
 
+import MetaPixel from "@/components/Pixel/MetaPixel";
 import { motion } from "framer-motion";
 import {
   Clock,
@@ -62,23 +63,6 @@ const itemVariants = {
       duration: 0.6,
     },
   },
-};
-
-const AuthRedirect = () => {
-  const router = useRouter();
-
-  useEffect(() => {
-    try {
-      const isAuthenticated = localStorage.getItem("Authenticated");
-      if (isAuthenticated === "true") {
-        router.replace("/Dashboard");
-      }
-    } catch (error) {
-      console.warn("Failed to access localStorage:", error);
-    }
-  }, [router]);
-
-  return null;
 };
 
 export default function LandingPage() {
@@ -158,7 +142,7 @@ export default function LandingPage() {
     () => [
       {
         number: "01",
-        title: "Start Timer or Log Task",
+        title: "Start Timer",
         description:
           "Begin tracking time with one click or manually log completed tasks.",
         icon: Play,
@@ -330,7 +314,7 @@ export default function LandingPage() {
 
   return (
     <>
-      <AuthRedirect />
+      <MetaPixel />
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="pt-10">

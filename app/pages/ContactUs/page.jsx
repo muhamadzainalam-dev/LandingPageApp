@@ -182,10 +182,10 @@ export default function ContactPage() {
                     <div>
                       <p className="font-semibold">Email Us:</p>
                       <a
-                        href="mailto:zennytrack@gmail.com"
+                        href="mailto:agayn.official@gmail.com"
                         className="hover:underline text-blue-600"
                       >
-                        zennytrack@gmail.com
+                        agayn.official@gmail.com
                       </a>
                     </div>
                   </div>
@@ -224,7 +224,7 @@ export default function ContactPage() {
                       </a>{" "}
                       |
                       <a
-                        href="https://www.linkedin.com/in/muhamadzain-dev"
+                        href="https://www.linkedin.com/company/agayn/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:underline text-blue-600 ml-1"

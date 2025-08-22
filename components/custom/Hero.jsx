@@ -27,11 +27,11 @@ export default function Hero() {
           >
             <h1
               id="hero-title"
-              className="font-bold text-gray-900 leading-tight tracking-tight"
+              className="font-bold text-gray-900 font-clash leading-tight tracking-tight"
               style={{
                 fontSize: "clamp(2.5rem, 8vw, 4rem)",
-                fontFamily:
-                  'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+                fontFamily: "Chillax",
+                fontWeight: 700,
               }}
             >
               <div className="text-gray-900 mb-2">Track Time</div>
@@ -184,7 +184,7 @@ export default function Hero() {
                   {[
                     {
                       name: "Website Redesign",
-                      time: "2:34:12",
+                      time: "3:10:03",
                       color: "bg-blue-600",
                       icon: "M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9",
                       progress: 75,
@@ -192,7 +192,7 @@ export default function Hero() {
 
                     {
                       name: "Code Review",
-                      time: "0:45:22",
+                      time: "1:25:01",
                       color: "bg-violet-500",
                       icon: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4",
                       progress: 45,

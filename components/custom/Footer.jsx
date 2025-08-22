@@ -32,16 +32,19 @@ export default function Footer() {
     {
       title: "Stay Connected",
       links: [
-        { name: "Instagram", href: "https://instagram.com/zennytrack" },
+        {
+          name: "Instagram",
+          href: "https://instagram.com/agayn.official/",
+        },
         {
           name: "Facebook",
-          href: "https://www.facebook.com/profile.php?id=61579216805718",
+          href: "https://www.facebook.com/profile.php?id=61579931060088",
         },
-        { name: "YouTube", href: "https://www.youtube.com/@zenny_track" },
-        {
-          name: "Pinterest",
-          href: "https://www.pinterest.com/zennytrack",
-        },
+        // { name: "YouTube", href: "https://www.youtube.com/@zenny_track" },
+        // {
+        //   name: "Pinterest",
+        //   href: "https://www.pinterest.com/zennytrack",
+        // },
       ],
     },
 
@@ -102,7 +105,7 @@ export default function Footer() {
                   <Twitter className="h-5 w-5" />
                 </motion.a>
                 <motion.a
-                  href="https://www.linkedin.com/in/muhamadzain-dev/"
+                  href="https://www.linkedin.com/company/agayn/"
                   target="_blank"
                   whileHover={{ scale: 1.1, y: -2 }}
                   className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-200"
@@ -110,15 +113,7 @@ export default function Footer() {
                   <Linkedin className="h-5 w-5" />
                 </motion.a>
                 <motion.a
-                  href="https://github.com/zennytrack"
-                  target="_blank"
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-200"
-                >
-                  <Github className="h-5 w-5" />
-                </motion.a>
-                <motion.a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=zennytrack@gmail.com&su=I%20want%20to%20learn%20more&body=Hello%2C%0AI%20would%20like%20to%20learn%20more%20about%20your%20services."
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=agayn.official@gmail.com&su=I%20want%20to%20learn%20more&body=Hello%2C%0AI%20would%20like%20to%20learn%20more%20about%20your%20services."
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1, y: -2 }}

@@ -163,6 +163,11 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         />
 
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=chillax@1&display=swap"
+          rel="stylesheet"
+        ></link>
+
         {/* Preload critical font */}
         <link
           rel="preload"
